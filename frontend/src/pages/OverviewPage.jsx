@@ -42,7 +42,7 @@ const OverviewPage = () => {
 
 		// Check admin email
 		const email = localStorage.getItem("email"); // Use your email storage logic
-		if (email === "dipashak0505@gmail.com") {
+		if (email === "singlaaditi04@gmail.com") {
 			fetchUsers();
 		} else {
 			setError("Access denied. Admin only.");
