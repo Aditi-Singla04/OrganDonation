@@ -50,7 +50,7 @@ const Sidebar = () => {
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.2 }}
               >
-                <h2 className="text-gray-100 text-lg font-medium">DIPASHA</h2>
+                <h2 className="text-gray-100 text-lg font-medium">ADITI</h2>
                 <p className="text-gray-400 text-sm">ADMIN</p>
               </motion.div>
             )}
