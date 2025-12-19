@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 
 const receiverSchema = new mongoose.Schema({
   receiverName: { type: String, required: true},
-  phone: { type: String, required: true, match: /^[0-9]{10}$/ },
-  email: { type: String, required: true, match: /^[a-zA-Z0-9._%+-]+@gmail\.com$/  },
+  phone: { type: String, required: true },
+  email: { type: String, required: true },
   gender: { type: String, required: true, enum: ['Male', 'Female', 'Other']  },
   organ: { type: String, required: true },
   bloodGroup: { type: String, required: true },
