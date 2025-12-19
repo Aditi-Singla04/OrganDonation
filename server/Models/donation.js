@@ -2,9 +2,9 @@ const mongoose = require('mongoose');
 
 const donationSchema = new mongoose.Schema({
   donorName: { type: String, required: true},
-  phone: { type: String, required: true, match: /^[0-9]{10}$/ },
+  phone: { type: String, required: true},
   email: { type: String, required: true },
-  gender: { type: String, required: true },
+  gender: { type: String, required: true, enum: ['Male', 'Female', 'Other'] },
   organ: { type: String, required: true },
   bloodGroup: { type: String, required: true, enum: ['A+', 'A-', 'B+', 'B-', 'AB+', 'AB-', 'O+', 'O-'] },
   userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User'},
