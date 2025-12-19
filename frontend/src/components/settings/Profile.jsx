@@ -5,8 +5,8 @@ import SettingSection from "./SettingSection";
 const Profile = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [userInfo, setUserInfo] = useState({
-    name: "DIPASHA",
-    email: "dipashak0505@gmail.com",
+    name: "ADITI",
+    email: "singlaaditi39@gmail.com",
   });
 
   const handleSave = (e) => {
